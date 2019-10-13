@@ -2,7 +2,7 @@
     "0": { 
         "label": "",
         "lookup": "GENERIC",
-        "description": "General codes. These double as bare “reasons”, since 0y01 == 1.",
+        "description": "General codes. These double as bare “reasons”, since 0x01 == 1.",
         "codes": {
             "0": {
                 "label": "Failure",
@@ -67,8 +67,8 @@
             "F": {
                 "label": "Informational or Metadata",
                 "lookups": ["INFORMATIONAL","METADATA"]
-            },
-        },
+            }
+        }
     },
     "1": { 
         "label": "Permission & Control",
@@ -138,8 +138,8 @@
             "F": {
                 "label": "Permission Details or Control Conditions",
                 "lookups": ["PERMISSION_DETAILS","CONTROL_CONDITIONS"]
-            },
-        },
+            }
+        }
     },
     "2": { 
         "label": "Find, Inequalities & Range",
@@ -209,8 +209,8 @@
             "F": {
                 "label": "Matching Meta or Info",
                 "lookups": ["MATCHING_META","INFO"]
-            },
-        },
+            }
+        }
     },
     "3": { 
         "label": "Negotiation & Governance",
@@ -280,8 +280,8 @@
             "F": {
                 "label": "Negotiation Rules or Participation Info",
                 "lookups": ["NEGOTIATION_RULES","PARTICIPATION_INFO"]
-            },
-        },
+            }
+        }
     },
     "4": { 
         "label": "Availability & Time",
@@ -351,8 +351,8 @@
             "F": {
                 "label": "Availability Rules or Info (ex. time since or until)",
                 "lookups": ["AVAILABILITY_RULES","INFO","TIME_SINCE","UNTIL"]
-            },
-        },
+            }
+        }
     },
     "5": { 
         "label": "Tokens, Funds & Finance",
@@ -422,8 +422,8 @@
             "F": {
                 "label": "Token or Financial Information",
                 "lookups": ["TOKEN","FINANCIAL_INFORMATION"]
-            },
-        },
+            }
+        }
     },
     "6": { 
         "label": "",
@@ -431,7 +431,7 @@
         "description": "Currently unspecified. (Full range reserved)",
         "codes": {
             
-        },
+        }
     },
     "7": { 
         "label": "",
@@ -439,7 +439,7 @@
         "description": "Currently unspecifie. (Full range reserved)",
         "codes": {
             
-        },
+        }
     },
     "8": { 
         "label": "",
@@ -447,14 +447,14 @@
         "description": "Currently unspecified. (Full range reserved)",
         "codes": {
             
-        },
+        }
     },
     "9": { 
         "label": "",
         "lookup": "TBD",
         "description": "Currently unspecified. (Full range reserved)",
         "codes": {
-        },
+        }
     },
     "A": { 
         "label": "Application-Specific Codes",
@@ -524,28 +524,28 @@
             "F": {
                 "label": "App-Specific Meta or Info",
                 "lookups": ["APP_SPECIFIC_META","INFO"]
-            },
-        },
+            }
+        }
     },
     "B": { 
         "label": "",
         "lookup": "TBD",
-        "description": "Currently unspecified. (Full range reserved)",
+        "description": "Currently unspecified. (Full range reserved)"
     },
     "C": { 
         "label": "",
         "lookup": "TBD",
-        "description": "Currently unspecified. (Full range reserved)",
+        "description": "Currently unspecified. (Full range reserved)"
     },
     "D": { 
         "label": "",
         "lookup": "TBD",
-        "description": "Currently unspecified. (Full range reserved)",
+        "description": "Currently unspecified. (Full range reserved)"
     },
     "E": { 
         "label": "Encryption, Identity & Proofs",
         "lookup": "ENCRYPTION, IDENTITY & PROOFS",
-        "description": "Actions around signatures, cryptography, signing, and application-level authentication. The meta code 0yEF is often used to signal a payload descibing the algorithm or process used.",
+        "description": "Actions around signatures, cryptography, signing, and application-level authentication. The meta code 0xEF is often used to signal a payload descibing the algorithm or process used.",
         "codes": {
             "0": {
                 "label": "Decrypt Failure",
@@ -610,13 +610,13 @@
             "F": {
                 "label": "Cryptography, ID, or Proof Metadata",
                 "lookups": ["CRYPTOGRAPHY","ID","PROOF_METADATA"]
-            },
-        },
+            }
+        }
     },
     "F": { 
         "label": "Off-Chain",
         "lookup": "OFF-CHAIN",
-        "description": "For off-chain actions. Much like th 0y0*: Generic range, 0xF is very general, and does little to modify the reason. Among other things, the meta code 0yFF may be used to describe what the off-chain process is.",
+        "description": "For off-chain actions. Much like th 0x0*: Generic range, 0xF is very general, and does little to modify the reason. Among other things, the meta code 0xFF may be used to describe what the off-chain process is.",
         "codes": {
             "0": {
                 "label": "Off-Chain Failure",
@@ -681,7 +681,7 @@
             "F": {
                 "label": "Off-Chain Info or Meta",
                 "lookups": ["OFF_CHAIN_INFO","META"]
-            },
-        },
-    },
+            }
+        }
+    }
 }
